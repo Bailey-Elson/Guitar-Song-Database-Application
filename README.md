@@ -6,7 +6,7 @@
 |---|---|---|
 |1|A|NA|
 |2|B|NA|
-3|C|NA|
+|3|C|NA|
 
 |Song ID|Song Name|Song Artist|
 |1|Sweet child of mine|Guns N Roses|
