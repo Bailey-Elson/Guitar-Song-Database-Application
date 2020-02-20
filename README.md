@@ -17,4 +17,8 @@
 |2|Summer of 69|Bryan Adams|
 |3|Brown Eyed Girl|Van Morrison|
 
+|ID|Song ID|Chord ID|
+|---|---|---|
+|1|1|2|
+|2|1|3|
 
