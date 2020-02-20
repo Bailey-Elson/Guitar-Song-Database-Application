@@ -1,6 +1,9 @@
-# Qa SFIA Projcet 1
+# Qa SFIA Project 1
+---
 
 * bullet point
+* another bullet point
+* and one more
 
 |Chord ID|Chord Name|Chord Symbol|
 |---|---|---|
