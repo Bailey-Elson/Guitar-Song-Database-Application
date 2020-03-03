@@ -5,6 +5,8 @@
 * another bullet point
 * and one more
 
+![A picture of the trello board, started on the first week. The Product Backlog, The Sprint Backlog, the Tasks for the first week have been added. Only the 'Start the Trello board' task has been completed](https://imgur.com/a/gYMIFqZ?)
+
 |Chord ID|Chord Name|Chord Symbol|
 |---|---|---|
 |1|A|NA|
