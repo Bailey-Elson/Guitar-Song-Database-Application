@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+{% block body %} 
+<div class="meme">
+<br>
+<br>
+<br>
+<form method="POST" action="">
+    <center>
+    <H1>Enter Old Song Details </H1> <br>
+    Song Name <br><input type = "text" name= "oldSongName" /> <br>
+    Artist <br><input type = "text" name = "oldSongArtist" /> <br>
+    Genre <br><input type = "text" name = "oldSongGenre" /> <br>
+    <H1>Enter New Song Details </H1> <br>
+    Song Name <br><input type = "text" name= "newSongName" /> <br>
+    Artist <br><input type = "text" name = "newSongArtist" /> <br>
+    Genre <br><input type = "text" name = "newSongGenre" /> <br>
+    <input type = "submit">
+    </center>
+</form>
+</div>
+{% endblock %}

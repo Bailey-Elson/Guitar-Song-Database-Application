@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block body %} 
+<div class="meme">
+<br>
+<br>
+<br>
+{% for i in info1 %}
+    <li>
+        <a>{{ i[1] }}</a>
+        <a>{{ i[2] }}</a>
+        <a>{{ i[3] }}</a>
+    </li>
+{% endfor %}
+<form method="POST" action="">
+    <center>
+    <H1>Enter Song Details </H1> <br>
+    Song Name <br><input type = "text" name= "songName" /> <br>
+    Artist <br><input type = "text" name = "songArtist" /> <br>
+    Genre <br><input type = "text" name = "songGenre" /> <br>
+    <input type = "submit">
+    </center>
+</form>
+</div>
+
+{% endblock %}

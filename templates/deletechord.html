@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block body %} 
+<br><br><br><br>
+<center>
+<H1>Enter Chord Details </H1> <br>
+<form method="POST" action="{{ url_for('deletechord') }}">
+    
+    Chord Name<br><input type = "text" name= "chordName" /> <br>
+    Chord Symbol<br><input type = "text" name= "chordSymbol" /> <br>
+    <button type="submit">Delete Song</button>
+    
+</form>
+</center>
+{% endblock %}
+ 

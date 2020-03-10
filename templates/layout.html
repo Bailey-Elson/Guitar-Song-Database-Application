@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>
+            Baileys Guitar Database Application
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <style>
+            .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #000;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            }
+            .navbar li {
+            float: left;
+            }
+            .navbar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            border-right: 1px solid #bbb;
+            border-left: 1px solid #bbb;
+            }
+            .navbar li a:hover {
+            background-color: #4CAF50;
+            }
+            .navbar div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 180px;
+            }
+            .navbar div.gallery:hover {
+            border: 1px solid #777;
+            }
+            .navbar div.gallery img {
+            width: 100%;
+            height: auto;
+            }
+            .navbar div.desc {
+            padding: 15px;
+            text-align: center;
+            }
+            .meme li{
+            color:rgb(255, 255, 255);
+            font-size: x-large;
+            align-items: center;
+            list-style-type: none;
+            }
+            body,h1 {font-family: "Raleway", sans-serif}
+            body, html {height: 100%}
+            .bgimg {
+            background-image: url('https://hdwallsource.com/img/2016/7/monochrome-guitar-desktop-wallpaper-58780-60556-hd-wallpapers.jpg');
+            min-height: 100%;
+            background-position: center;
+            background-size: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+        <div class = 'navbar'>
+        <ul>
+            <li><a href="/">Songs</a></li>
+            <li><a href="/chord">Chords</a></li>
+        </ul> 
+        </div> 
+
+            {% block body %}
+            {% endblock %}
+        
+        </div>
+
+    </body>
+</html>

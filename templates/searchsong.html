@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block body %} 
+<br><br><br><br>
+<center>
+    <H1>Enter Song Details </H1> <br>
+    <form method="POST" action="{{ url_for('searchsong2') }}">
+    Song Name<br><input type = "text" name= "songName" /> <br>
+    <button onclick="window.location.href = '/song/searchsong/2';">Search Songs</button>
+</form>
+</center>
+{% endblock %}
