@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block body %} 
+<br><br><br><br>
+<center>
+<H1>Choose Chord to add to Song</H1>
+<form method="POST" action="">
+    <H3>Song</H3>
+    <select ID = "songName" name = "songName">
+        {%for s in songs1%}
+        <option value="{{s}}">{{s}}</option>
+        {%endfor%}
+    </select>
+    <H3>Chord</H3>
+    <select ID = "chordName" name = "chordName">
+        {%for c in chords1%}
+        <option value="{{c}}">{{c}}</option>
+        {%endfor%}
+    </select>
+    <br><br>
+    <input class = 'fivebuttons' type = "submit">
+</form>
+<br><br>
+</center>
+{% endblock %}

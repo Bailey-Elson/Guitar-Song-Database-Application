@@ -6,8 +6,8 @@
     <H1>Enter Chord Details </H1> <br>
     <form method="POST" action="{{ url_for('searchchord2') }}">
     Chord Name<br><input type = "text" name= "chordName" /> <br>
-    Chord Symbol<br><input type = "text" name = "chordSymbol" /><br>
-    <button onclick="window.location.href = '/song/searchchord/2';">Search Chords</button>
+    Chord Symbol<br><input type = "text" name = "chordSymbol" /><br><br>
+    <button class = 'fivebuttons' onclick="window.location.href = '/song/searchchord/2';">Search Chords</button>
 </form>
 </center>
 {% endblock %}
