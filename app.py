@@ -34,9 +34,11 @@ def addsong():
         name=details['songName']
         artist=details['songArtist']
         genre=details['songGenre']
-        cur = mysql.connection.cursor()
-        cur.execute("INSERT INTO Songs(Song_name, Artist, Genre)VALUES(%s,%s,%s)",(name, artist, genre))
-        mysql.connection.commit()
+        if name != "" and artist != "" and genre != "":
+            cur = mysql.connection.cursor()
+            cur.execute("INSERT INTO Songs(Song_name, Artist, Genre)VALUES(%s,%s,%s)",(name, artist, genre))
+            mysql.connection.commit()
+            cur.close()
     return render_template("addsong.html")
 
 @app.route('/song/deletesong', methods = ['GET','POST'])
@@ -86,10 +88,11 @@ def editsong():
         newname=details['newSongName']
         newartist=details['newSongArtist']
         newgenre=details['newSongGenre']
-        cur = mysql.connection.cursor()
-        cur.execute("UPDATE Songs SET Song_name = (%s), Artist = (%s), Genre = (%s) WHERE Song_name = (%s) and Artist = (%s) and Genre = (%s);",(newname,newartist,newgenre,oldname,oldartist,oldgenre))
-        mysql.connection.commit()
-        cur.close()
+        if oldname != "" and oldartist != "" and oldgenre != "" and newname != "" and newartist != "" and newgenre != "": 
+            cur = mysql.connection.cursor()
+            cur.execute("UPDATE Songs SET Song_name = (%s), Artist = (%s), Genre = (%s) WHERE Song_name = (%s) and Artist = (%s) and Genre = (%s);",(newname,newartist,newgenre,oldname,oldartist,oldgenre))
+            mysql.connection.commit()
+            cur.close()
 
     return render_template("editsong.html")
 
@@ -117,10 +120,11 @@ def addchord():
         details=request.form 
         name=details['chordName']
         symbol=details['chordSymbol']
-        cur = mysql.connection.cursor()
-        cur.execute("INSERT INTO Chords(Chord_name, Chord_symbol)VALUES(%s,%s)",(name, symbol))
-        mysql.connection.commit()
-    
+        if name != "" and symbol != "":
+            cur = mysql.connection.cursor()
+            cur.execute("INSERT INTO Chords(Chord_name, Chord_symbol)VALUES(%s,%s)",(name, symbol))
+            mysql.connection.commit()
+            cur.close()
     return render_template("addchord.html")
 
 @app.route('/chord/deletechord', methods = ['GET','POST'])
