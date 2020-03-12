@@ -30,4 +30,24 @@ CREATE TABLE Chords_Songs (
     FOREIGN KEY(ChordID) REFERENCES Chords(ChordID)
 );
 ​
+INSERT INTO Songs(Song_name, Artist, Genre)VALUES('Pop boy','Stormzy','Grime');
+INSERT INTO Songs(Song_name, Artist, Genre)VALUES('Nike','Frank Ocean','RnB');
+INSERT INTO Songs(Song_name, Artist, Genre)VALUES('Bruce Wayne','Bugzy Malone','Rap');
+INSERT INTO Songs(Song_name, Artist, Genre)VALUES('Lose Yourself','Eminem','Rap');
+INSERT INTO Songs(Song_name, Artist, Genre)VALUES('Game Over','Dave','Grime');
+INSERT INTO Songs(Song_name, Artist, Genre)VALUES('Seven Rings','Ariana Grande','Pop');
+INSERT INTO Songs(Song_name, Artist, Genre)VALUES('3 Strikes','Kastaway','RnB');
+INSERT INTO Songs(Song_name, Artist, Genre)VALUES('Darkness','Eminem','Rap');
+INSERT INTO Songs(Song_name, Artist, Genre)VALUES('Own It','Stormzy','Grime');
+INSERT INTO Songs(Song_name, Artist, Genre)VALUES('Yellow Submarine','The Beatles','Pop Rock');
+
+INSERT INTO Chords(Chord_Name, Chord_Symbol)VALUES('A'.'');
+INSERT INTO Chords(Chord_Name, Chord_Symbol)VALUES('B'.'');
+INSERT INTO Chords(Chord_Name, Chord_Symbol)VALUES('C'.'');
+INSERT INTO Chords(Chord_Name, Chord_Symbol)VALUES('D'.'');
+INSERT INTO Chords(Chord_Name, Chord_Symbol)VALUES('A'.'Minor');
+INSERT INTO Chords(Chord_Name, Chord_Symbol)VALUES('C'.'Major');
+INSERT INTO Chords(Chord_Name, Chord_Symbol)VALUES('E'.'#');
+
+
 COMMIT;
