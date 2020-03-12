@@ -1,12 +1,10 @@
 # Qa SFIA Project 1
----
+
  ## Contents 
 
  1. Brief 
     * My Soloution 
- 2. ERD Diagrams 
-    * Initial ERD
-    * Final ERD 
+2. Entity Relationship Diagrams 
 3. Risk Assessment 
 4. Trello Board 
     * Sprints
@@ -28,23 +26,15 @@ Requiremenst:
 * A functioning front-end website and integrated API’s, using Flask.
 * Code fully integrated into a Version Control System using the Feature-Branch model which will subsequently be built through a CI server and deployed to a cloud-based virtual machine
 
+---
+## Entity Relationship Diagrams
 
 ![A picture of my ERD diagram](https://i.imgur.com/j2NkMcB.png)
 
-|Chord ID|Chord Name|Chord Symbol|
-|---|---|---|
-|1|A|NA|
-|2|B|NA|
-|3|C|NA|
+The above ERD shows my database structure. I will be using three tables(Songs, Chords and Chords_Songs), With a many to many relationship between the Songs table and Chords_Songs table and also between the Chords table and the Chords_Songs table. The Chords_Songs table is a joining table between the other two tables using both their primary keys as foriegn keys.
 
-|Song ID|Song Name|Song Artist|
-|---|---|---|
-|1|Sweet child of mine|Guns N Roses|
-|2|Summer of 69|Bryan Adams|
-|3|Brown Eyed Girl|Van Morrison|
+---
 
-|ID|Song ID|Chord ID|
-|---|---|---|
-|1|1|2|
-|2|1|3|
+
+
 
