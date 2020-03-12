@@ -5,7 +5,7 @@
 * another bullet point
 * and one more
 
-(https://i.imgur.com/j2NkMcB.png)
+![A picture of my ERD diagram](https://i.imgur.com/j2NkMcB.png)
 
 |Chord ID|Chord Name|Chord Symbol|
 |---|---|---|
