@@ -1,9 +1,33 @@
 # Qa SFIA Project 1
 ---
+ ## Contents 
 
-* bullet point
-* another bullet point
-* and one more
+ 1. Brief 
+    * My Soloution 
+ 2. ERD Diagrams 
+    * Initial ERD
+    * Final ERD 
+3. Risk Assessment 
+4. Trello Board 
+    * Sprints
+
+---
+
+## Brief 
+Objective:
+To create a CRUD application with utilisation of supporting tools, methodologies and technologies that encapsulate all core modules covered during training.
+
+Requiremenst:
+* Trello Board
+* Relational database used to store data persistently for the project, this database needs to have at least 2 tables in it
+* ERD diagram modeling the relationship
+* Risk Assessment
+* Clear Documentation from a design phase describing the architecture you will use for you project
+* functional CRUD application created in Python
+* Fully designed test suites
+* A functioning front-end website and integrated API’s, using Flask.
+* Code fully integrated into a Version Control System using the Feature-Branch model which will subsequently be built through a CI server and deployed to a cloud-based virtual machine
+
 
 ![A picture of my ERD diagram](https://i.imgur.com/j2NkMcB.png)
 
