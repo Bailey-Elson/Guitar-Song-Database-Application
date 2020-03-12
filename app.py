@@ -33,22 +33,69 @@ def viewsong():
 #code for add song button and page
 @app.route('/song/addsong', methods = ['GET','POST'])
 def addsong():
+    cur = mysql.connection.cursor()
+    cur.execute("SELECT Chord_name, Chord_symbol FROM Chords;")
+    mysql.connection.commit()
+    chords = cur.fetchall()
+    chords2=[""]
+    for i in range(0,len(chords)):
+        chords2.append(str(chords[i][0])+" "+str(chords[i][1]))
     if request.method == "POST":
         details=request.form 
         name=details['songName']
         artist=details['songArtist']
         genre=details['songGenre']
+        chord1=details['chordName1']
+        chord2=details['chordName2']
+        chord3=details['chordName3']
+        chord4=details['chordName4']
+        chord5=details['chordName5']
         cur = mysql.connection.cursor()
         cur.execute("SELECT * FROM Songs WHERE Song_name = %s AND Artist = %s AND Genre = %s;",(name, artist, genre))
         mysql.connection.commit()
         test = cur.fetchall()
-        cur.close()
         if name != "" and artist != "" and genre != "" and test == ():
             cur = mysql.connection.cursor()
             cur.execute("INSERT INTO Songs(Song_name, Artist, Genre)VALUES(%s,%s,%s);",(name, artist, genre))
             mysql.connection.commit()
             cur.close()
-    return render_template("addsong.html")
+        if chord1 != "":
+            addingchord(chord1,name)
+        if chord2 != "":
+            addingchord(chord2,name)
+        if chord3 != "":
+            addingchord(chord3,name)
+        if chord4 != "":
+            addingchord(chord4,name)
+        if chord5 != "":
+            addingchord(chord5,name)
+    return render_template("addsong.html", chords1 = chords2)
+
+def addingchord(chord,name):
+    chordSymbol = ""
+    chord = chord.split()
+    chordName = chord[0]
+    if len(chord) == 2:
+        chordSymbol = chord[1]
+    cur = mysql.connection.cursor() 
+    if chordSymbol == "":
+        cur.execute("SELECT ChordID from Chords WHERE Chord_name = (%s) AND Chord_symbol = (%s);",[chordName, chordSymbol])
+        ChordID = str(cur.fetchall())
+    else:
+        cur.execute("SELECT ChordID from Chords WHERE Chord_name = (%s) AND Chord_symbol = (%s);",[chordName, chordSymbol])
+        ChordID = str(cur.fetchall())
+    cur.execute("SELECT SongID from Songs WHERE Song_name = (%s);",[name])
+    SongID = str(cur.fetchall())
+    SongID = SongID[2:-4]
+    ChordID = ChordID[2:-4]
+    cur = mysql.connection.cursor()
+    cur.execute("SELECT * FROM Chords_Songs WHERE ChordID = %s AND SongID = %s;",(ChordID,SongID))
+    mysql.connection.commit()
+    test = cur.fetchall()
+    if test == ():
+        cur.execute("INSERT INTO Chords_Songs(ChordID,SongID)VALUES(%s,%s);",(ChordID,SongID))
+        mysql.connection.commit()
+        cur.close()
 
 #code for delete song button and page 
 @app.route('/song/deletesong', methods = ['GET','POST'])
