@@ -17,6 +17,7 @@ mysql = MySQL(app)
 def song():
     return render_template("song.html")
 
+#yo
 #code for view song button and page 
 @app.route('/song/viewsong')
 def viewsong():
