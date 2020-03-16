@@ -10,6 +10,7 @@ app.config['MYSQL_DB'] = os.environ.get('MYSQLDB')
 mysql = MySQL(app)
 
 #Everything to do with the Songs button on the navbar 
+
 #code for main Songs page and home page
 @app.route('/', methods = ['GET','POST'])
 @app.route('/song', methods = ['GET','POST'])
