@@ -17,6 +17,6 @@ pip3 install Werkzeug
 
 pip3 install Flask-WTF
 
-source ~/.bashrc
+source ~/bashrc
 
 python3 app.py
