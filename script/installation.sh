@@ -14,7 +14,7 @@ pip3 install Werkzeug
 
 pip3 install Flask-WTF
 
-pip3 install -U pytest
+pip3 install pytest
 
 pip3 install urllib3
 
