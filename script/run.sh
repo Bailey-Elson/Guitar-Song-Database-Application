@@ -1,0 +1,1 @@
+python3 /var/lib/jenkins/workspace/SFIA/app.py

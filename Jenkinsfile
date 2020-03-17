@@ -16,5 +16,10 @@ pipeline{
                 sh 'pytest ./test/testing.py'
             }
         }
+        stage('Run App'){
+            steps{
+                sh './script/run.sh'
+            }
+        }
     }
 }
