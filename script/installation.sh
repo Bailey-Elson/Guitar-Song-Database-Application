@@ -1,8 +1,8 @@
 #!/bin/bash
 
 source venv/bin/activate
-
-python -m pip install pytest
+ 
+python3 -m pip install pytest
 
 pip3 install Flask
 
