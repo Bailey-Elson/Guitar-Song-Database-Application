@@ -22,5 +22,6 @@ pip3 install coverage
 
 source ~/.bashrc
 
-python3 /home/Admin/SFIA1/app.py
+python3 /var/lib/workspace/SFIA1/app.py
+
 #gunicorn --workers=4 --bind=0.0.0.0:5000 app:app
