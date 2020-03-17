@@ -2,7 +2,7 @@
 
 source venv/bin/activate
 
-python -m pip install pytest 
+python -m pip install pytest
 
 pip3 install Flask
 
@@ -18,7 +18,7 @@ pip3 install Flask-WTF
 
 pip3 install urllib3
 
-pip3 install coverage
+python3 -m pip install coverage
 
 source ~/.bashrc
 
