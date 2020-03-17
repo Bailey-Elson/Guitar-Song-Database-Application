@@ -20,7 +20,7 @@ pip3 install urllib3
 
 pip3 install coverage
 
-source ~/bashrc
+source ~/.bashrc
 
 python3 /var/lib/jenkins/workspace/SFIA/app.py
 
