@@ -9,3 +9,4 @@ sudo apt install guincorn -y
 sudo apt-get install mysql-server -y
 sudo apt-get install libmysqlclient-dev -y
 python3 -m venv venv
+sudo cp flask.service /etc/systemd/system
