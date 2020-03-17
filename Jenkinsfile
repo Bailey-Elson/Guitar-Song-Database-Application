@@ -8,6 +8,12 @@ pipeline{
                 sh 'chmod +x ./script/*'
                 sh './script/before_installation.sh'
                 sh './script/installation.sh'
+                sh 'sudo systemctl start flask.service'
+            }
+        }
+        stage('Testing'){
+            steps{
+                sh 'pytest ./test/testing.py'
             }
         }
     }

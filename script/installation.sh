@@ -14,6 +14,13 @@ pip3 install Werkzeug
 
 pip3 install Flask-WTF
 
+pip3 install -U pytest
+
+pip3 install urllib3
+
+pip3 install coverage
+
 source ~/.bashrc
 
-gunicorn --workers=4 --bind=0.0.0.0:5000 app:app
+python3 /home/Admin/SFIA1/app.py
+#gunicorn --workers=4 --bind=0.0.0.0:5000 app:app
