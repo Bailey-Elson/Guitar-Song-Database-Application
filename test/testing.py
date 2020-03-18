@@ -64,19 +64,19 @@ def test_addChordToSongPage():
     r = http.request('GET', 'http://34.68.124.32:5000/chord/addchordtosong')
     assert 200 == r.status
 
-app=Flask(__name__)
+# app=Flask(__name__)
 
-app.config['MYSQL_HOST']=os.environ['MYSQLHOST']
-app.config['MYSQL_USER']=os.environ['MYSQLUSER']
-app.config['MYSQL_PASSWORD']=os.environ['MYSQLPASSWORD']
-app.config['MYSQL_DB']=os.environ['MYSQLDB']
+# app.config['MYSQL_HOST']=os.environ['MYSQLHOST']
+# app.config['MYSQL_USER']=os.environ['MYSQLUSER']
+# app.config['MYSQL_PASSWORD']=os.environ['MYSQLPASSWORD']
+# app.config['MYSQL_DB']=os.environ['MYSQLDB']
 
-mysql = MySQL(app)
+# mysql = MySQL(app)
 
-def test_select():
-    with app.app_context():
-        cur = mysql.connection.cursor()
-        numRecords = cur.execte("SELECT * FROM Songs;")
-        mysql.connection.commit()
-        cur.close()
-        assert 19 == numRecords
+# def test_select():
+#     with app.app_context():
+#         cur = mysql.connection.cursor()
+#         numRecords = cur.execte("SELECT * FROM Songs;")
+#         mysql.connection.commit()
+#         cur.close()
+#         assert 19 == numRecords
