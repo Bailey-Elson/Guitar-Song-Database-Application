@@ -1,5 +1,8 @@
 import pytest
 import urllib3
+from flask import Flask, render_template, request
+import os
+from flask_mysqldb import MySQL
 
 def test_songPage():
     http = urllib3.PoolManager()
@@ -60,3 +63,20 @@ def test_addChordToSongPage():
     http = urllib3.PoolManager()
     r = http.request('GET', 'http://34.68.124.32:5000/chord/addchordtosong')
     assert 200 == r.status
+
+app=Flask(__name__)
+
+app.config['MYSQL_HOST']=os.environ['MYSQLHOST']
+app.config['MYSQL_USER']=os.environ['MYSQLUSER']
+app.config['MYSQL_PASSWORD']=os.environ['MYSQLPASSWORD']
+app.config['MYSQL_DB']=os.environ['MYSQLDB']
+
+mysql = MySQL(app)
+
+def test_select():
+    with app.app_context():
+        cur = mysql.connection.cursor()
+        numRecords = cur.execte("SELECT * FROM Songs;")
+        mysql.connection.commit()
+        cur.close()
+        assert 19 == numRecords
