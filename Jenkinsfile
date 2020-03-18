@@ -15,6 +15,7 @@ pipeline{
         }
         stage('Testing'){
             steps{
+                sh 'chmod +x ./script/*'
                 sh './script/before_installation.sh'
                 sh 'python3 -m pytest ./test/testing.py'
                 sh 'pip3 show coverage'
