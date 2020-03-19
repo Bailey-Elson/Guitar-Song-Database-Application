@@ -100,7 +100,7 @@ def test_readChords_SongsTable():
 def test_createSongsTable():
     with app.app_context():
         cur = mysql.connection.cursor()
-        cur.execute("INSERT INTO Songs(SongID, Song_name, Artist, Genre)VALUES('200', 'Yummy','Justin Bieber','Pop');")
+        cur.execute("INSERT INTO Songs(SongID, Song_name, Artist, Genre)VALUES(200, 'Yummy','Justin Bieber','Pop');")
         mysql.connection.commit()
         numRecords = cur.execute("SELECT * FROM Songs;")
         mysql.connection.commit()
@@ -110,7 +110,7 @@ def test_createSongsTable():
 def test_createChordsTable():
     with app.app_context():
         cur = mysql.connection.cursor()
-        cur.execute("INSERT INTO Chords(ChordID, Chord_name, Chord_symbol)VALUES('200', 'D','Major');")
+        cur.execute("INSERT INTO Chords(ChordID, Chord_name, Chord_symbol)VALUES(200, 'D','Major');")
         mysql.connection.commit()
         numRecords = cur.execute("SELECT * FROM Chords;")
         mysql.connection.commit()
@@ -121,7 +121,7 @@ def test_createChordsTable():
 def test_createChords_SongsTable():
     with app.app_context():
         cur = mysql.connection.cursor()
-        cur.execute("INSERT INTO Chords_Songs(ID, SongID, ChordID)VALUES('200', '200','200');")
+        cur.execute("INSERT INTO Chords_Songs(ID, SongID, ChordID)VALUES(200, 200, 200);")
         mysql.connection.commit()
         numRecords = cur.execute("SELECT * FROM Chords_Songs;")
         mysql.connection.commit()
