@@ -101,6 +101,7 @@ def test_createSongsTable():
     with app.app_context():
         cur = mysql.connection.cursor()
         cur.execute("INSERT INTO Songs(SongID, Song_name, Artist, Genre)VALUES('200', 'Yummy','Justin Bieber','Pop');")
+        mysql.connection.commit()
         numRecords = cur.execute("SELECT * FROM Songs;")
         mysql.connection.commit()
         cur.close()
@@ -110,6 +111,7 @@ def test_createChordsTable():
     with app.app_context():
         cur = mysql.connection.cursor()
         cur.execute("INSERT INTO Chords(ChordID, Chord_name, Chord_symbol)VALUES('200', 'D','Major');")
+        mysql.connection.commit()
         numRecords = cur.execute("SELECT * FROM Chords;")
         mysql.connection.commit()
         cur.close()
@@ -120,6 +122,7 @@ def test_createChords_SongsTable():
     with app.app_context():
         cur = mysql.connection.cursor()
         cur.execute("INSERT INTO Chords_Songs(ID, SongID, ChordID)VALUES('200', '200','200');")
+        mysql.connection.commit()
         numRecords = cur.execute("SELECT * FROM Chords_Songs;")
         mysql.connection.commit()
         cur.close()
@@ -129,6 +132,7 @@ def test_deleteChords_SongsTable():
     with app.app_context():
         cur = mysql.connection.cursor()
         cur.execute("DELETE FROM Chords_Songs WHERE ID = '200';")
+        mysql.connection.commit()
         numRecords = cur.execute("SELECT * FROM Chords_Songs;")
         mysql.connection.commit()
         cur.close()
@@ -138,6 +142,7 @@ def test_deleteSongsTable():
     with app.app_context():
         cur = mysql.connection.cursor()
         cur.execute("DELETE FROM Songs WHERE SongID = '200';")
+        mysql.connection.commit()
         numRecords = cur.execute("SELECT * FROM Songs;")
         mysql.connection.commit()
         cur.close()
@@ -147,6 +152,7 @@ def test_deleteChordsTable():
     with app.app_context():
         cur = mysql.connection.cursor()
         cur.execute("DELETE FROM Chords WHERE ChordID = '200';")
+        mysql.connection.commit()
         numRecords = cur.execute("SELECT * FROM Chords;")
         mysql.connection.commit()
         cur.close()
