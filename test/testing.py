@@ -100,7 +100,7 @@ def test_readChords_SongsTable():
 def test_createSongsTable():
     with app.app_context():
         cur = mysql.connection.cursor()
-        cur.execute("INSERT INTO Songs(SongID, Song_name, Artist, Genre)VALUES(200, 'Yummy','Justin Bieber','Pop');")
+        cur.execute("INSERT INTO Songs(SongID, Song_name, Artist, Genre)VALUES('200', 'Yummy','Justin Bieber','Pop');")
         numRecords = cur.execute("SELECT * FROM Songs;")
         mysql.connection.commit()
         cur.close()
