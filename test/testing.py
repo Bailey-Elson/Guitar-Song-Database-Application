@@ -79,7 +79,7 @@ def test_readSongsTable():
         numRecords = cur.execute("SELECT * FROM Songs;")
         mysql.connection.commit()
         cur.close()
-        assert 20 == numRecords
+        assert 19 == numRecords
 
 def test_readChordsTable():
     with app.app_context():
@@ -87,7 +87,7 @@ def test_readChordsTable():
         numRecords = cur.execute("SELECT * FROM Chords;")
         mysql.connection.commit()
         cur.close()
-        assert 9 == numRecords
+        assert 8 == numRecords
 
 def test_readChords_SongsTable():
     with app.app_context():
