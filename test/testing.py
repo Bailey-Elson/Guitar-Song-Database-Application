@@ -1,6 +1,6 @@
 import pytest
 import urllib3
-from flask import Flask, render_template, request
+from flask import Flask
 import os
 from flask_mysqldb import MySQL
 
