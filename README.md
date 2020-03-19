@@ -49,6 +49,8 @@ The above ERD shows my database structure. I will be using three tables(Songs, C
 #### Application Flow Chart
 
 ![A picture of my flow chart](https://i.imgur.com/HlC0Ea0.png)
+
+The above flow chart shows the basic application structure plan at the beginning of the project. Each dotted box represents a differnt page on the application. All the pages excluding the main song page and main chord page will access the databse to crreate, read, update or delete data. 
 ---
 ## Testing
 ---
@@ -56,3 +58,14 @@ The above ERD shows my database structure. I will be using three tables(Songs, C
 
 ![A picture of my flow chart](https://i.imgur.com/GNTpLvj.png)
 
+Technologies used:
+* Github: hosting for software development version control
+* Python: high-level, general-purpose programming language
+* Pytest: testing framework
+* Flask: micro web framework 
+* Jinja: web template engine
+* HTML:  markup language for web browsers
+* CSS: style sheet language
+* Jenkins: open source automation server
+* Google Cloud Platform: cloud computing services
+* MYSQL: open-source relational database management system
