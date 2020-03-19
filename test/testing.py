@@ -4,7 +4,8 @@ from flask import Flask
 import os
 from flask_mysqldb import MySQL
 
-def test_songPage():
+#url testing
+def test_homePage():
     http = urllib3.PoolManager()
     r = http.request('GET', 'http://34.68.124.32:5000/')
     assert 200 == r.status
@@ -69,6 +70,8 @@ def test_addChordToSongPage():
     r = http.request('GET', 'http://34.68.124.32:5000/chord/addchordtosong')
     assert 200 == r.status
 
+
+#database testing
 app=Flask(__name__)
 
 app.config['MYSQL_HOST']=os.environ['MYSQLHOST']
