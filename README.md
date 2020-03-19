@@ -47,10 +47,12 @@ To create a CRUD application with utilisation of supporting tools, methodologies
 The above ERD shows my database structure. I will be using three tables(Songs, Chords and Chords_Songs), With a many to many relationship between the Songs table and Chords_Songs table and also between the Chords table and the Chords_Songs table. The Chords_Songs table is a joining table between the other two tables using both their primary keys as foriegn keys.
 
 #### Application Flow Chart
+
+![A picture of my flow chart](https://imgur.com/GNTpLvj)
 ---
 ## Testing
 ---
 ## Deployment 
 
-
+![A picture of my flow chart](https://imgur.com/HlC0Ea0)
 
