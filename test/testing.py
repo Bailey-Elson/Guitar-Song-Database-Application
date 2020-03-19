@@ -9,6 +9,11 @@ def test_songPage():
     r = http.request('GET', 'http://34.68.124.32:5000/')
     assert 200 == r.status
 
+def test_songPage():
+    http = urllib3.PoolManager()
+    r = http.request('GET', 'http://34.68.124.32:5000/song')
+    assert 200 == r.status
+
 def test_viewSongPage():
     http = urllib3.PoolManager()
     r = http.request('GET', 'http://34.68.124.32:5000/song/viewsong')
