@@ -53,10 +53,15 @@ The above ERD shows my database structure. I will be using three tables(Songs, C
 
 #### Application Flow Chart
 
-
+###### Original Flow Chart
 ![A picture of my flow chart](https://i.imgur.com/HlC0Ea0.png)
 
-The above flow chart shows the basic application structure plan at the beginning of the project. Each dotted box represents a differnet page on the application. All the pages excluding the main song page and main chord page will access the database to create, read, update or delete data.
+The above flow chart is the original flow chart plan for my application and shows the basic application structure plan at the beginning of the project. Each dotted box represents a differnet page on the application. All the pages excluding the main song page and main chord page will access the database to create, read, update or delete data.
+
+###### End Flow Chart
+![A picture of my flow chart](https://i.imgur.com/xuJO6BL.png)
+
+The above flow chart is the end flow chart for my application. The additions and altercations have been outlined in red. I firstly added two search funtions one for searching songs that contain a certain chord and the other is for searching chords within a certain song. I also removed the update chord function and replaced it with an add a chord to an existing song.
 
 ---
 
