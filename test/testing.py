@@ -127,6 +127,26 @@ def test_createChords_SongsTable():
         mysql.connection.commit()
         cur.close()
         assert 52 == numRecords
+        
+def test_updateSongsTable():
+    with app.app_context():
+        cur = mysql.connection.cursor()
+        cur.execute("UPDATE Songs SET Song_name = 'The Monster', Artist = 'Eminem', Genre = 'Rap' WHERE SongID = '200';")
+        mysql.connection.commit()
+        numRecords = cur.execute("SELECT * FROM Songs;")
+        mysql.connection.commit()
+        cur.close()
+        assert 20 == numRecords
+
+def test_updateChordsTable():
+    with app.app_context():
+        cur = mysql.connection.cursor()
+        cur.execute("UPDATE Chords SET Chord_Name = 'F', Chord_symbol = 'Minor' WHERE ChordID = '200';")
+        mysql.connection.commit()
+        numRecords = cur.execute("SELECT * FROM Chords;")
+        mysql.connection.commit()
+        cur.close()
+        assert 9 == numRecords
 
 def test_deleteChords_SongsTable():
     with app.app_context():
