@@ -10,32 +10,6 @@ def test_homePage():
     r = http.request('GET', 'http://34.68.124.32:5000/')
     assert 200 == r.status
 
-def test_homePage1():
-    http = urllib3.PoolManager()
-    r = http.request('GET', 'http://34.68.124.32:5000/')
-    assert 200 == r.status
-
-def test_homePage2():
-    http = urllib3.PoolManager()
-    r = http.request('GET', 'http://34.68.124.32:5000/')
-    assert 200 == r.status
-
-def test_homePage3():
-    http = urllib3.PoolManager()
-    r = http.request('GET', 'http://34.68.124.32:5000/')
-    assert 200 == r.status
-
-def test_homePage4():
-    http = urllib3.PoolManager()
-    r = http.request('GET', 'http://34.68.124.32:5000/')
-    assert 200 == r.status
-
-def test_homePage5():
-    http = urllib3.PoolManager()
-    r = http.request('GET', 'http://34.68.124.32:5000/')
-    assert 200 == r.status
-
-
 def test_songPage():
     http = urllib3.PoolManager()
     r = http.request('GET', 'http://34.68.124.32:5000/song')
