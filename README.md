@@ -54,12 +54,12 @@ The above ERD shows my database structure. I will be using three tables(Songs, C
 #### Application Flow Chart
 
 ###### Original Flow Chart
-![A picture of my flow chart](https://i.imgur.com/HlC0Ea0.png)
+![A picture of my start flow chart](https://i.imgur.com/HlC0Ea0.png)
 
 The above flow chart is the original flow chart plan for my application and shows the basic application structure plan at the beginning of the project. Each dotted box represents a differnet page on the application. All the pages excluding the main song page and main chord page will access the database to create, read, update or delete data.
 
 ###### End Flow Chart
-![A picture of my flow chart](https://i.imgur.com/xuJO6BL.png)
+![A picture of my end flow chart](https://i.imgur.com/xuJO6BL.png)
 
 The above flow chart is the end flow chart for my application. The additions and altercations have been outlined in red. I firstly added two search funtions one for searching songs that contain a certain chord and the other is for searching chords within a certain song. I also removed the update chord function and replaced it with an add a chord to an existing song.
 
@@ -67,11 +67,21 @@ The above flow chart is the end flow chart for my application. The additions and
 
 ## Testing
 
+For my testing i will be using the pytest and coverage modules within python, the tests will be written in pytest using python and then 
+
+My Testing ism split into two differnt types:
+    * URL Testing
+    * Database Testing
+    
+#### URL Testing 
+
+![A picture of my url test](https://i.imgur.com/rdP9I0A.png)
+
 ---
 
 ## Deployment 
 
-![A picture of my flow chart](https://i.imgur.com/GNTpLvj.png)
+![A picture of my deployemnt structure](https://i.imgur.com/GNTpLvj.png)
 
 Technologies used:
 * Github: hosting for software development version control
