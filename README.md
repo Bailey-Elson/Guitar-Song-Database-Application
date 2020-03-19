@@ -48,11 +48,11 @@ The above ERD shows my database structure. I will be using three tables(Songs, C
 
 #### Application Flow Chart
 
-![A picture of my flow chart](https://imgur.com/GNTpLvj)
+![A picture of my flow chart](https://i.imgur.com/HlC0Ea0.png)
 ---
 ## Testing
 ---
 ## Deployment 
 
-![A picture of my flow chart](https://imgur.com/HlC0Ea0)
+![A picture of my flow chart](https://i.imgur.com/GNTpLvj.png)
 
