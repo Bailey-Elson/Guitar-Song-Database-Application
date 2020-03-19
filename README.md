@@ -33,12 +33,17 @@ To create a CRUD application with utilisation of supporting tools, methodologies
 * Code fully integrated into a Version Control System using the Feature-Branch model which will subsequently be built through a CI server and deployed to a cloud-based virtual machine
 
 ---
+
 ## Project Plan 
 #### Trello Board
 #### Sprints 
+
 ---
+
 ## Risk Assesment 
+
 ---
+
 ## Architecture 
 #### Entity Relationship Diagrams
 
@@ -48,12 +53,17 @@ The above ERD shows my database structure. I will be using three tables(Songs, C
 
 #### Application Flow Chart
 
+
 ![A picture of my flow chart](https://i.imgur.com/HlC0Ea0.png)
 
-The above flow chart shows the basic application structure plan at the beginning of the project. Each dotted box represents a differnt page on the application. All the pages excluding the main song page and main chord page will access the databse to crreate, read, update or delete data. 
+The above flow chart shows the basic application structure plan at the beginning of the project. Each dotted box represents a differnet page on the application. All the pages excluding the main song page and main chord page will access the database to create, read, update or delete data.
+
 ---
+
 ## Testing
+
 ---
+
 ## Deployment 
 
 ![A picture of my flow chart](https://i.imgur.com/GNTpLvj.png)
