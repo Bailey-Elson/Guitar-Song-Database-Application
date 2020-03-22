@@ -6,7 +6,6 @@
     * Objective
     * Requirements
 2. Project Plan
-    * Trello Board
     * Sprints
 3. Risk Assessment 
 4. Architecture 
@@ -14,6 +13,8 @@
     * Application Flow Chart
 5. Testing 
 6. Deployment
+    * CI Pipeline
+7. Evaluation
 
 ---
 
@@ -38,25 +39,40 @@ To create a CRUD application with utilisation of supporting tools, methodologies
 
 I plan on splitting my project into 5 seperate sprints each of whihc will last a week. By the end of the 5 sprints i will have a fully working CRUD application Metting all of the requirements listsed previously.
 
+#### Trello Board Key 
+
+![Pictuire of first sprint](https://i.imgur.com/z4DhuyS.png)
+Above is akey for the labels used on my trello board
+
 #### Sprint 1: 
 
 ![Pictuire of first sprint](https://i.imgur.com/ece3sed.png)
+
+These are the tasks planned for the first sprint. The first sprint is fairly basic mainly containing tasks setting up the foundations for the following sprints.
 
 #### Sprint 2:
 
 ![Picture of second sprint](https://i.imgur.com/tGJ8Pmv.png)
 
+These are the tasks planned for the second sprint. The second sprint contains tasks relating to the databse needed for the aplication.
+
 #### Sprint 3:
 
 ![Picture of third sprint](https://i.imgur.com/bljkSjF.png)
+
+These are the tasks planned for the third sprint. The third sprint contains tasks relating to the user interface design and planning the overall flow of the user interface.
 
 #### Sprint 4:
 
 ![Picture of fourth sprint](https://i.imgur.com/dZVTxoU.png)
 
+These are the tasks planned for the fourth sprint. The fourth sprint contains coding tasks for the application, mainly the tasks need for the minimal viable product as well as those fullfillng the Create, Read and update methods.
+
 #### Sprint 5:
 
 ![Picture of fifth sprint](https://i.imgur.com/rElBBpU.png)
+
+These are the tasks planned for the fifth sprint. The fifth sprint contains coding tasks for the application for the Delete methods as well as any extentions to the application i would like to add. The fifth sprint also contains the CI pipeline tasks.
 
 ---
 
@@ -139,3 +155,55 @@ Technologies used:
 * Jenkins: open source automation server
 * Google Cloud Platform: cloud computing services
 * MYSQL: open-source relational database management system
+
+#### CI Pipeline 
+
+For my CI pipeline i will be using a Jenkins server with a webhook connection to my github for automated builds whenever anyting is commited to my github. My jenkins Pipeline will be split into two sections a development Enviroment which will will install any required tools and then run the application. The second section will be a teesting section which will srun the tests talked about previously.
+
+## Evaluation 
+
+Have mi meet the requirements prviously stated in this documentation.
+
+1. Trello Board
+
+I used a trello board throughout my project, using it to keep track of the sprint progress.
+
+2. Relational database used to store data persistently for the project, this database needs to have at least 2 tables in it
+
+I have a relational databse containing three tables and two many to many relationships between these tables.
+
+3. ERD diagram modeling the relationship
+
+Prviously shown in documentation 
+
+4. Risk Assessment
+
+Prviously shown in documentation 
+
+5. Clear Documentation from a design phase describing the architecture you will use for you project
+
+Shown in documentation 
+
+6. functional CRUD application created in Python
+
+I have made a fully functioning CRUD application with each method being used at leadt once, this was coded using python, HTML, CSS and SQL.
+
+7.Fully designed test suites
+
+Prviously shown in documentation 
+
+8. A functioning front-end website and integrated API’s, using Flask.
+
+I have made a front-end website that runs using flask and a jenkins pipeline
+
+9. Code fully integrated into a Version Control System using the Feature-Branch model which will subsequently be built through a CI server and deployed to a cloud-based virtual machine
+
+Achieved, using a jenkins pipleine for the CI server.
+
+As shown abovve all nine requiremenst of the project were meet therefore i would consider the project a success. Although the project was a succes there is possible areas for extension. These areas include expanding testing to up the coverage percentage, selenium testing and a user log in funtion so that each user can store the chords that they have learnt.
+
+
+
+
+
+
