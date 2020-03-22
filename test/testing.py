@@ -55,6 +55,10 @@ def test_addChordToSongPage():
     http = urllib3.PoolManager()
     r = http.request('GET', 'http://34.68.124.32:5000/chord/addchordtosong')
     assert 200 == r.status
+def test_addChordToSongPage():
+    http = urllib3.PoolManager()
+    r = http.request('GET', 'http://34.68.124.32:5000/nonexistant')
+    assert 404 == r.status
 app=Flask(__name__)
 app.config['MYSQL_HOST']=os.environ['MYSQLHOST']
 app.config['MYSQL_USER']=os.environ['MYSQLUSER']
