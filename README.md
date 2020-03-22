@@ -91,6 +91,12 @@ My Testing ism split into two differnt types
 
 ![A picture of my url test](https://i.imgur.com/rdP9I0A.png)
 
+The above picture is an example of one of the URL test that i ran on my application. This test use the python module urllib3 to test the HTTP response. It takes the inputted URL, in this case http://34.68.124.32:5000/ and saves the response as the variable  r. It then tests the status of the variable against the HTTP response status 200 (which is the OK status indicating a succesful connection) and if the two statuses match then the test is passed.
+I used this layout of code to test the succesful connection to all twelve of my different URL pages as well as chaning the 200 status with a 404 status to test a page that doesnt exdit on the website.
+
+![A picture of my database test](https://i.imgur.com/9zmFafY.png)
+
+
 ---
 
 ## Deployment 
