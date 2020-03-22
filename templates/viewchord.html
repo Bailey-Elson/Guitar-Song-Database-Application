@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="meme">
+<br>
+<br>
+<br>
+<center>
+{% for i in info1 %}
+    <li>
+        <a>{{ i[1] }}</a>
+        <a>{{ i[2] }}</a>
+        <a>{{ i[3] }}</a>
+    </li>
+{% endfor %}
+</div>
+</center>
+{% endblock %}

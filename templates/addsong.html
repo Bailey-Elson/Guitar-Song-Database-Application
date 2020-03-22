@@ -1,0 +1,44 @@
+{% extends 'layout.html' %}
+{% block body %} 
+<div class="meme">
+<br>
+<br>
+<br>
+<form method="POST" action="">
+    <center>
+    <H1>Enter Song Details </H1> <br>
+    Song Name <br><input type = "text" name= "songName" /> <br>
+    Artist <br><input type = "text" name = "songArtist" /> <br>
+    Genre <br><input type = "text" name = "songGenre" /> <br><br>
+
+    Chords: <br><select ID = "chordName1" name = "chordName1">
+        {%for c in chords1%}
+        <option value="{{c}}">{{c}}</option>
+        {%endfor%}
+    </select>
+    <select ID = "chordName2" name = "chordName2">
+        {%for c in chords1%}
+        <option value="{{c}}">{{c}}</option>
+        {%endfor%}
+    </select>
+    <select ID = "chordName3" name = "chordName3">
+        {%for c in chords1%}
+        <option value="{{c}}">{{c}}</option>
+        {%endfor%}
+    </select>
+    <select ID = "chordName4" name = "chordName4">
+        {%for c in chords1%}
+        <option value="{{c}}">{{c}}</option>
+        {%endfor%}
+    </select>
+    <select ID = "chordName5" name = "chordName5">
+        {%for c in chords1%}
+        <option value="{{c}}">{{c}}</option>
+        {%endfor%}
+    </select>
+    <br><br>
+    <input class ='fivebuttons' type = "submit">
+    </center>
+</form>
+</div>
+{% endblock %}
