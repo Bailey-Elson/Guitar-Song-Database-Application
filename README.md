@@ -94,8 +94,13 @@ My Testing ism split into two differnt types
 The above picture is an example of one of the URL test that i ran on my application. This test use the python module urllib3 to test the HTTP response. It takes the inputted URL, in this case http://34.68.124.32:5000/ and saves the response as the variable  r. It then tests the status of the variable against the HTTP response status 200 (which is the OK status indicating a succesful connection) and if the two statuses match then the test is passed.
 I used this layout of code to test the succesful connection to all twelve of my different URL pages as well as chaning the 200 status with a 404 status to test a page that doesnt exdit on the website.
 
+
+#### Database Testing
+
 ![A picture of my database test](https://i.imgur.com/9zmFafY.png)
 
+The above picture is an example of one of my database tests. This test uses the python modules Flask, Flask_mysqldb and os to test the connection to the databse. Using the preset details for my database it selects all the values inside the Songs table and compares how many values inside the table to how many were expected and then if the two values match tne test is considered a success.
+For all three of my tables inside of my database I ran four different tests, one for each CRUD method making a totla of 12 databse tests.
 
 ---
 
