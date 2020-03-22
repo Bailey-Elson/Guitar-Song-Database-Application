@@ -84,8 +84,10 @@ The above flow chart is the end flow chart for my application. The additions and
 For my testing i will be using the pytest and coverage modules within python, the tests will be written in pytest using python and then 
 
 My Testing ism split into two differnt types:
+
     * URL Testing
     * Database Testing
+
     
 #### URL Testing 
 
