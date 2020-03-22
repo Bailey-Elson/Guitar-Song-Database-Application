@@ -42,6 +42,11 @@ To create a CRUD application with utilisation of supporting tools, methodologies
 
 ## Risk Assesment 
 
+|Risk No. | Risk | Effect | Cause | Likelihood | Impact | Soloution |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | Overreaching on the project | Overreaching on the project will lead to the project becoming to complicated . This in turn will mean that I might not be able to turn in a finished product and I might lose motivation for the project. | Overestimation of my abilities. | Low | High | Keep the project simple while still meeting all then targets and if I have extra time at the end of the project I can thennslowly add extra fetures once the core project is done. |
+
+
 ---
 
 ## Architecture 
